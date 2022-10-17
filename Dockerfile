@@ -30,8 +30,6 @@ RUN cp -rf \
   /etc/ssl \
   /var/spool/postfix/etc/
 
-EXPOSE 25:25
-
 COPY install-postfix-relay.sh /opt/install-postfix-relay.sh
 
 ENTRYPOINT ["/opt/install-postfix-relay.sh"]
