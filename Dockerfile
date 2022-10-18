@@ -30,6 +30,10 @@ RUN cp -rf \
   /etc/ssl \
   /var/spool/postfix/etc/
 
+ADD ./postfix/relay_maps /etc/postfix/relay_maps
+
 COPY install-postfix-relay.sh /opt/install-postfix-relay.sh
+
+#expose on tailscale ip only on ip:port->587
 
 ENTRYPOINT ["/opt/install-postfix-relay.sh"]
