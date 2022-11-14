@@ -1,2 +1,3 @@
-@triii.org      [100.102.10.15:1587]:1587
-@willowcreativ.com      [100.102.10.15:1587]:1587
+@triii.org      smtp:[100.102.10.15]:1587
+@willowcreativ.com      smtp:[100.102.10.15]:1587
+@serioussnackage.com      smtp:[100.102.10.15]:1588

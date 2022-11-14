@@ -1,0 +1,9 @@
+transport_maps = hash:/etc/postfix/transport
+compatibility_level = 2
+maillog_file = /var/log/postfix.log
+mynetworks = 0.0.0.0/0
+mynetworks_style = subnet
+smtp_sasl_security_options = noanonymous
+smtp_sasl_tls_security_options = noanonymous
+smtp_tls_security_level = encrypt
+smtpd_tls_auth_only = yes
